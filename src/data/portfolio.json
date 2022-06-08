@@ -1,0 +1,22 @@
+{
+    "portfolio": [
+        {
+            "cover": "/yelpcamp.png",
+            "title": "Yelp-Camp",
+            "description": "EJS, MONGODB, EXPRESS, NODEJS",
+            "url": "https://github.com/sadityakumar9211/Yelp-Camp"
+        },
+        {
+            "cover": "/myspace.png",
+            "title": "MySpace-Group Project",
+            "description": "EJS, MONGO, EXPRESS, Tailwind, NODEJS",
+            "url": "https://github.com/sadityakumar9211/MySpace-1"
+        },
+        {
+            "cover": "",
+            "title": "Military Database Management System",
+            "description": "MySQL, Relational Expressions",
+            "url": "https://github.com/sadityakumar9211/DBMS-project"
+        }
+    ]
+}
