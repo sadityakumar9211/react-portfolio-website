@@ -21,20 +21,21 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'gmail',
-        'template_YeJhZkgb',
+        'service_4fy0rbw',
+        'template_e5edd96',
         form.current,
-        'your-token'
+        'xWPoePw29KdUqJurl'
       )
       .then(
         () => {
           alert('Message successfully sent!')
           window.location.reload(false)
-        },
-        () => {
-          alert('Failed to send the message, please try again')
-        }
-      )
+        })
+      .catch((e) => {
+        console.log(e)
+        alert('Failed to send the message, please try again')
+      })
+
   }
 
   return (
@@ -49,9 +50,7 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially ambitious or
-            large projects. However, if you have other request or question,
-            don't hesitate to contact me using below form either.
+            I am interested in internship and freelance opportunities. You can contact me using the below form.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -89,25 +88,25 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="info-map">
-          Aditya Kumar Singh,
-          <br />
-          student@ABV-IIITM,
-          <br />
-          Morena Link Road Gwalior - 474015 <br />
-          Madhya Pradesh <br />
-          <br />
-          <span>sadityakumar9211@gmail.com</span>
+          <div className="info-map">
+            Aditya Kumar Singh,
+            <br />
+            student@ABV-IIITM,
+            <br />
+            Morena Link Road Gwalior - 474015 <br />
+            Madhya Pradesh <br />
+            <br />
+            <span>sadityakumar9211@gmail.com</span>
+          </div>
+          <div className="map-wrap">
+            <MapContainer center={[26.25086065947548, 78.17461966961183]} zoom={14}>
+              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+              <Marker position={[26.25086065947548, 78.17461966961183]}>
+                <Popup>ABV-IIITM Gwalior</Popup>
+              </Marker>
+            </MapContainer>
+          </div>
         </div>
-        <div className="map-wrap">
-          <MapContainer center={[26.25086065947548, 78.17461966961183]} zoom={14}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[26.25086065947548, 78.17461966961183]}>
-              <Popup>ABV-IIITM Gwalior</Popup>
-            </Marker>
-          </MapContainer>
-        </div>
-      </div>
       <Loader type="pacman" />
     </>
   )
