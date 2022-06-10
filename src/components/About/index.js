@@ -1,10 +1,8 @@
 import { useEffect, useState } from 'react'
 import {
-  faAngular,
   faCss3,
   faGithubSquare,
   faJsSquare,
-  faPython,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'

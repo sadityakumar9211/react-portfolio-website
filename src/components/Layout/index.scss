@@ -39,6 +39,10 @@
 }
 
 .container.contact-page {
+  @media screen and (min-width: 800px){
+    width: 100%;
+    left: 0;
+  }
   width: 76%;
   will-change: contents;
   height: 90%;

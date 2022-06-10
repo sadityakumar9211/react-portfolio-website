@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import LogoTitle from '../../assets/images/logo-s.png'
+import LogoTitle from '../../assets/images/homepageletter.png'
 import Logo from './Logo'
 import './index.scss'
 
@@ -47,7 +47,8 @@ const Home = () => {
             <span className={`${letterClass} _14`}>'m</span>
             <img
               src={LogoTitle}
-              alt="JavaScript Developer Name, Web Developer Name"
+              style={{width: "40px", height: "50px"}}
+              alt="Name,Name"
             />
             <AnimatedLetters
               letterClass={letterClass}
